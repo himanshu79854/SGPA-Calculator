@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <video autoplay loop muted playsinline id="background-video">
+        <source src="background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <h1>SGPA Calculator</h1>
+        <table id="subjectTable">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Internal Marks</th>
+                    <th>External Marks</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mathematics-IV</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Universal Human Values</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>Theory of Automata</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>OOP with Java</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Cyber Security</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Operating System Lab</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Java Lab</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Cyber Security Lab</td>
+                    <td><input type="number" class="internal"></td>
+                    <td><input type="number" class="external"></td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="calculateSGPA()">Calculate SGPA</button>
+        <h2 id="result">Your SGPA: --</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
